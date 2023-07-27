@@ -1,0 +1,115 @@
+
+* {
+  background-color: antiquewhite;
+  color: black
+}
+
+.title, .subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Source C ode Pro", monospace;
+}
+
+.name{
+  font-family:"Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.question, .answer, .questionFinal{
+  font-family:"Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-inputbox{
+  font-family:"Source Code Pro", monospace;
+  display: flex;
+  margin-left: -20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome {
+  font-family:"Source Code Pro", monospace;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-title {
+  font-family:"Source Code Pro", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-box {
+  width: 100px;
+}
+
+.picOne, .picFinal, .pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+
+h4, h3, h5 {
+  position: relative;
+  width: max-content
+}
+
+h4::after, h4::before, h3::after, h3::before, h5::after, h5::before{
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+h5::before{
+  background: antiquewhite;
+  animation: typewriter 6s steps(24) forwards;
+}
+
+h4::before{
+  background: antiquewhite;
+  animation: typewriter 6s steps(24) forwards;
+}
+
+h3::before{
+  background: antiquewhite;
+  animation: typewriter 6s steps(24) forwards;
+}
+
+h5::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 6s steps(24) forwards;
+}
+
+
+h4::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 6s steps(24) forwards;
+}
+
+h3::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter 6s steps(24) forwards;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
